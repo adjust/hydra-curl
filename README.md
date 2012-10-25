@@ -5,6 +5,9 @@ This bash script takes a todo list of urls and downloads them in parallel using 
 Upon finishing all resulting files are concated into one big target file in order to save file handlers upon further manipulation. (this behavior can be easily changed)
 
 ## Usage
+First of all create a ```todo file``` consisting of one url per line, with all the url you need to get.
+Then simply:
+
     hydra-curl.sh todo.txt output.txt
 
 
