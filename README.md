@@ -10,7 +10,7 @@ Upon finishing all resulting files are concated into one big target file in orde
 
 ## License
 
-The adjust-sdk is licensed under the MIT License.
+This Software is licensed under the MIT License.
 
 Copyright (c) 2012 adeven GmbH, 
 http://www.adeven.com
