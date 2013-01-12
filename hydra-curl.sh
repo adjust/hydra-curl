@@ -13,7 +13,8 @@ function curl_download {
   TRIES=0
   while [ "$TRIES" -lt "$MAX_RETRIES" ] && [ "$ANSWER_SIZE" -lt "$MIN_SIZE" ]
     do
-      ANSWER=$(curl --retry 3 -s "$2?$1$TRIES" --max-time 60)
+      TIMESTAMP=$(date +%s)
+      ANSWER=$(curl --retry 3 -s "$2?$TIMESTAMP" --max-time 60)
       if [ "$?" -ne "0" ]; then
         ANSWER=""
       else
